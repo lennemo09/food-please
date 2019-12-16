@@ -6,12 +6,6 @@ bot.on("ready", () => {
   console.log("Working!");
 });
 
-const prefix = "!"
-
-const ytdl = require('ytdl-core');
-
-const queue = new Map();
-
 bot.once('reconnecting', () => {
 	console.log('Reconnecting!');
 });
