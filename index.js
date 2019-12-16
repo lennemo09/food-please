@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const bot = new Discord.Client();
-const token = "NjU2MTgxNjQ1NDA5Mzg2NDk2.Xfe9bg.CSGv507Nx3CFOD_jjWa4qVpgUyk";
+const token = process.env.food;
 
 bot.on("ready", () => {
   console.log("Working!");
@@ -38,7 +38,7 @@ function checkID(str) {
 function playTaunt(msg, id) {
     if (msg.member.voiceChannel) {
         msg.member.voiceChannel.join().then(connection => {
-            const dispatcher = connection.playFile('taunt/'+id+'.mp3');
+            const dispatcher = connection.playFile('./taunt/'+id+'.mp3');
             dispatcher.on('end', () => {
                 dispatcher.end();
             })
