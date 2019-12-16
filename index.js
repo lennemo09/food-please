@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const bot = new Discord.Client();
-const token = process.env.food;
+const token = "NjU2MTgxNjQ1NDA5Mzg2NDk2.Xfe9bg.CSGv507Nx3CFOD_jjWa4qVpgUyk";
 
 bot.on("ready", () => {
   console.log("Working!");
