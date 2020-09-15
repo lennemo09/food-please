@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const bot = new Discord.Client();
-const token = "NjU2MTgxNjQ1NDA5Mzg2NDk2.XfjZ0w.gHf7spxSitvPelUNKn0h2GWdyrI";
+const token = "YOUR TOKEN HERE";
 
 bot.on("ready", () => {
     bot.user.setActivity('for food!pls', { type: 'WATCHING' })
